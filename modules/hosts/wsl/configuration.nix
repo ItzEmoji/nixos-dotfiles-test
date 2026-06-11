@@ -9,6 +9,7 @@
       self.nixosModules.packages-wsl
       self.nixosModules.home-manager
       self.nixosModules.wsl-cyril
+      self.nixosModules.nix-cache
       {
         networking.hostName = "cyril-wsl";
       }

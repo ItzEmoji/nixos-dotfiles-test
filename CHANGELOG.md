@@ -1,0 +1,10 @@
+# Changelog
+
+## 1.0.0 (2026-06-11)
+
+
+### Features
+
+* new-ci ([c233f4f](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/c233f4f39618c27a6c99d2dec952762d54e416f8))
+* new-ci ([1fefc26](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/1fefc267d38e6604a83aacd1285cf12f52897f3c))
+* rebuilt the entire desktop, made some general changes and wrapped even more programs. ([a9426f7](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/a9426f7677879d48ce861b644e73ebd95ee1b21d))

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.0.0...v1.1.0) (2026-06-11)
+
+
+### Features
+
+* update lockfile. ([#3](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/3)) ([654c327](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/654c3279eb5c8ec49892b764952c3ce90f9fbb42))
+
 ## 1.0.0 (2026-06-11)
 
 

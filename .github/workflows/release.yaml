@@ -1,6 +1,6 @@
 name: Release Please
 permissions:
-  content: write
+  contents: write
   pull-requests: write
 
 on:

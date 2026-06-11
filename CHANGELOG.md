@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.1.0...v1.1.1) (2026-06-11)
+
+
+### Bug Fixes
+
+* imported nix-cache nixosModules to the wsl host. ([#5](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/5)) ([fb60d0a](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/fb60d0a7768b9232372116ea266f8aa8944a2644))
+
 ## [1.1.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.0.0...v1.1.0) (2026-06-11)
 
 

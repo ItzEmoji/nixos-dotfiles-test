@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - uses: googleapis/release-please-action@v4
-        token: ${{ secrets.GITHUB_TOKEN }}
+        releaes-type: simple

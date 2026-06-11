@@ -1,4 +1,7 @@
 name: Release Please
+permissions:
+  content: write
+  pull-requests: write
 
 on:
   push:

@@ -1,4 +1,5 @@
 name: Release Please
+
 permissions:
   contents: write
   pull-requests: write
@@ -7,6 +8,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -32,9 +34,17 @@ jobs:
 
       - uses: cachix/install-nix-action@v31
 
-      - run: nix build .#nixosConfigurations.wsl.config.system.build.toplevel
+      - name: Build WSL image
+        run: |
+          nix run .#nixosConfigurations.wsl.config.system.build.tarballBuilder --print-build-logs
 
-      - uses: softprops/action-gh-release@v2
+      - name: Rename artifact
+        run: |
+          VERSION="${{ needs.release.outputs.tag_name }}"
+          mv result/*.wsl "nixos-${VERSION}.wsl"
+
+      - name: Upload to existing release
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.release.outputs.tag_name }}
-          files: result/*
+          files: nixos-${{ needs.release.outputs.tag_name }}.wsl

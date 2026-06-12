@@ -36,7 +36,8 @@ jobs:
 
       - name: Build WSL image
         run: |
-          sudo -E nix run .#nixosConfigurations.wsl.config.system.build.tarballBuilder --print-build-logs
+          NIX_PATH=$(which nix)
+          sudo -E $NIX_PATH run .#nixosConfigurations.wsl.config.system.build.tarballBuilder --print-build-logs
 
       - name: Rename artifact
         run: |

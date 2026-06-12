@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.2.0...v1.2.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* ci ([#10](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/10)) ([559f92b](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/559f92bbb29ae7b3e7a956138dce2769e172091f))
+
 ## [1.2.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.1.1...v1.2.0) (2026-06-12)
 
 

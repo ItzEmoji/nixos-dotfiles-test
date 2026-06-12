@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.1.1...v1.2.0) (2026-06-12)
+
+
+### Features
+
+* update flake lock ([#8](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/8)) ([e00b92a](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/e00b92a3d9704710f2eecb91b0c82a4c0119d932))
+
 ## [1.1.1](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.1.0...v1.1.1) (2026-06-11)
 
 

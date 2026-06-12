@@ -19,9 +19,9 @@ jobs:
 
     steps:
       - id: release
-        uses: googleapis/release-please-action@v4
+        uses: googleapis/release-please-action@v5
         with:
-          release-type: simple
+          config_file: .github/release-please-config.json
 
   build:
     needs: release
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - uses: cachix/install-nix-action@v31
 
@@ -44,8 +44,8 @@ jobs:
           VERSION="${{ needs.release.outputs.tag_name }}"
           mv nixos.wsl "nixos-${VERSION}.wsl"
 
-      - name: Upload to existing release
-        uses: softprops/action-gh-release@v2
+      - name: Upload to existing release & Publish
+        uses: softprops/action-gh-release@v3
         with:
-          tag_name: ${{ needs.release.outputs.tag_name }}
-          files: nixos-${{ needs.release.outputs.tag_name }}.wsl
+           tag_name: ${{ needs.release.outputs.tag_name }}
+           files: nixos-${{ needs.release.outputs.tag_name }}.wsl

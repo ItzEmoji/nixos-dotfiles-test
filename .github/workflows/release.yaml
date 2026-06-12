@@ -21,7 +21,7 @@ jobs:
       - id: release
         uses: googleapis/release-please-action@v5
         with:
-          config_file: .github/release-please-config.json
+          config-file: .github/release-please-config.json
 
   build:
     needs: release

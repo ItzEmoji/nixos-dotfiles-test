@@ -42,7 +42,7 @@ jobs:
       - name: Rename artifact
         run: |
           VERSION="${{ needs.release.outputs.tag_name }}"
-          mv result/*.wsl "nixos-${VERSION}.wsl"
+          mv nixos.wsl "nixos-${VERSION}.wsl"
 
       - name: Upload to existing release
         uses: softprops/action-gh-release@v2

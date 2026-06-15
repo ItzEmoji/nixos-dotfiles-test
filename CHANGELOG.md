@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.5.1](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.5.0...v1.5.1) (2026-06-15)
+
+
+### Bug Fixes
+
+* ci ([#26](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/26)) ([4037753](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/403775325c1482960afbcfcbd89215fa68406c6d))
+
+## [1.5.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.4.0...v1.5.0) (2026-06-15)
+
+
+### Features
+
+* fixed ci ([#24](https://github.com/ItzEmoji/nixos-dotfiles-test/issues/24)) ([56c3595](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/56c3595ca53383939dd3c1e3246d560efc91dc16))
+
+## [1.4.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.3.0...v1.4.0) (2026-06-15)
+
+
+### Features
+
+* bot-token ([1f5c53a](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/1f5c53af6ac8858b07c331aa31135db651cba173))
+
 ## [1.3.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.2.4...v1.3.0) (2026-06-15)
 
 

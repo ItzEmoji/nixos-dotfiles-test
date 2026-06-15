@@ -9,8 +9,10 @@
       "prerelease": false,
       "skip-github-release": false,
       "force-tag-creation": true
-
     }
   },
-  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "pull-request-title-pattern": "release(${branch}): ${version}",
+  "pull-request-header": "Hello,\n\nThere have been commits in the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format since the latest release.\n\nFiles changed:",
+  "pull-request-footer": "If you are sure to create the release, simply squash this Pull Request."
 }

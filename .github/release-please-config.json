@@ -12,7 +12,7 @@
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "pull-request-title-pattern": "release(${branch}): ${version}",
-  "pull-request-header": "### Automated Release Process\n\nNew commits conforming to the Conventional Commits specification have been registered since the preceding release.\n\nThe following changelog details the specific modifications applied to the codebase:\n\n---\n",
-  "pull-request-footer": "---\n\n### Validation Required\n\nPlease verify the structural integrity and functionality of the proposed changes. If the system state is approved for production, authorise the release execution by squashing and merging this pull request."
+  "pull-request-title-pattern": "release(${branch}): ${version}", 
+  "pull-request-header": "### Automated Release Process\n\nNew commits conforming to the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/) have been registered since the preceding release.\n\nThe following changelog details the specific modifications applied to the codebase:\n\n",
+  "pull-request-footer": "### Validation Required\n\nIf the current changes are approved for publication, please authorize this request by squashing and merging this pull request. Consequently, a draft release will be created and a NixOS-WSL image will be built, attached to the release, and finally the release will be published."
 }

@@ -12,18 +12,22 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
       tag_name: ${{ steps.release.outputs.tag_name }}
+
     steps:
       - id: release
         uses: googleapis/release-please-action@v5
         with:
           config-file: .github/release-please-config.json
+          manifest-file: release.json
 
   build:
     needs: release
     if: ${{ needs.release.outputs.release_created == 'true' }}
+
     runs-on: ubuntu-latest
 
     steps:
@@ -41,15 +45,8 @@ jobs:
           VERSION="${{ needs.release.outputs.tag_name }}"
           mv nixos.wsl "nixos-${VERSION}.wsl"
 
-      - name: Upload Artifact to Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload ${{ needs.release.outputs.tag_name }} nixos-${{ needs.release.outputs.tag_name }}.wsl --clobber
-
-      - name: Rollback Release on Failure
-        if: ${{ failure() }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release delete ${{ needs.release.outputs.tag_name }} --yes --cleanup-tag
+      - name: Upload to existing release & Publish
+        uses: softprops/action-gh-release@v3
+        with:
+           tag_name: ${{ needs.release.outputs.tag_name }}
+           files: nixos-${{ needs.release.outputs.tag_name }}.wsl

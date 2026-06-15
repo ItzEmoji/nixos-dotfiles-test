@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.3.0...v1.4.0) (2026-06-15)
+
+
+### Features
+
+* bot-token ([1f5c53a](https://github.com/ItzEmoji/nixos-dotfiles-test/commit/1f5c53af6ac8858b07c331aa31135db651cba173))
+
 ## [1.3.0](https://github.com/ItzEmoji/nixos-dotfiles-test/compare/v1.2.4...v1.3.0) (2026-06-15)
 
 
